@@ -72,20 +72,10 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'AdminHome',
-        component: () => import('@/views/admin/HomeView.vue'),
-        meta: {
-          title: '出來喬 | 管理',
-          login: true,
-          admin: true
-        }
-      },
-      {
-        path: 'reservation',
         name: 'AdminReservation',
         component: () => import('@/views/admin/ReservationView.vue'),
         meta: {
-          title: '管理員 | 今日預約',
+          title: '管理員 | 預約訂單',
           login: true,
           admin: true
         }
